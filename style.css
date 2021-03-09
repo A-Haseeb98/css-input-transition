@@ -1,0 +1,60 @@
+.container{
+    background-color: aqua;
+    padding: 150px;
+    height: 340px;
+}
+.main{
+    background-color: white;
+    height: 200px;
+    width: 600px;
+    margin: auto;
+    position: relative;
+}
+img{
+    margin-top: 5px;
+    margin-bottom: -5px;
+    height: 20px;
+    width: 20px;
+}
+input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    height: 30px;
+    width: 93%;
+    margin-left: 10px;
+    padding-left: 25px;
+}
+label{
+    position: absolute;
+    left: 35px;
+    color: rgb(83, 83, 83);
+    top: 13px;
+    font-weight: bold ;
+
+}
+.row{
+    position: relative;
+}
+img{
+    position: absolute;
+    left: 10px;
+    top: 05px;
+}
+input:focus ~ label  {
+    transform: translateX(-24px);
+    font-size: 13px;
+    color: grey;
+    font-weight: normal;
+    transition: transform 0.5s;
+
+}
+input:focus ~ #img1{
+    transform: translateX(-20px);
+    display: none;
+    height: 300px;
+}
+input:focus ~ #img2{
+    transform: translateX(-20px);
+    display: none;
+}
